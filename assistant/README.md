@@ -75,7 +75,7 @@ The CLI clones the template and configures your environment. Then follow the res
 Clone the repository and install dependencies to a virtual environment:
 
 ```console
-cd agent-starter-python
+cd anfisa_new
 uv sync
 ```
 
@@ -106,6 +106,8 @@ To run the agent for use with a frontend or telephony, use the `dev` command:
 
 ```console
 uv run python src/agent.py dev
+# или
+lk agent dev
 ```
 
 In production, use the `start` command:

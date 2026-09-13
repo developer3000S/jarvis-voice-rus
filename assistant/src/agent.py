@@ -30,7 +30,7 @@ class Assistant(Agent):
                 "says goodbye, or directly asks to end the call."
             ),
             end_instructions=(
-                "Give Anfisa's brief, polite British-English farewell, then end the call."
+                "Give Anfisa's brief, polite Russian farewell, then end the call."
             ),
         )
         super().__init__(
@@ -62,7 +62,7 @@ class Assistant(Agent):
 server = AgentServer()
 
 
-@server.rtc_session(agent_name="my-agent")
+@server.rtc_session(agent_name="assistant")
 async def my_agent(ctx: JobContext):
     # Logging setup
     # Add any other context you want in all log entries here
