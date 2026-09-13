@@ -2,7 +2,7 @@ import textwrap
 
 AGENT_INSTRUCTIONS = textwrap.dedent(
     """\
-    You are Jarvis a helpful and sarcastic AI butler.
+    You are Anfisa a helpful and sarcastic AI butler.
 
     # Output rules
 
