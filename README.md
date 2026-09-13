@@ -1,6 +1,6 @@
-# Jarvis - Voice AI Butler
+# Anfisa - Voice AI Butler
 
-A voice-controlled AI butler built on the **LiveKit Agents** framework. Speak to Jarvis, and it responds with a sarcastic British-butler persona while having full control over a real web browser — browsing, searching, clicking, typing, and completing tasks on your behalf.
+A voice-controlled AI butler built on the **LiveKit Agents** framework. Speak to Anfisa, and it responds with a sarcastic British-butler persona while having full control over a real web browser — browsing, searching, clicking, typing, and completing tasks on your behalf.
 
 ## Features
 
@@ -19,8 +19,8 @@ A voice-controlled AI butler built on the **LiveKit Agents** framework. Speak to
 ## Project Structure
 
 ```
-jarvis_updated_test/
-├── jarvis_new/                 # Main project
+anfisa_updated_test/
+├── anfisa_new/                 # Main project
 │   ├── src/
 │   │   ├── agent.py            # Entrypoint — AgentServer, Assistant class
 │   │   ├── browser.py          # BrowserManager (Playwright Chromium)
@@ -60,7 +60,7 @@ jarvis_updated_test/
 ### 1. Python Agent
 
 ```bash
-cd jarvis_new
+cd anfisa_new
 uv sync
 uv run playwright install chromium
 ```
@@ -68,7 +68,7 @@ uv run playwright install chromium
 ### 2. React Web Frontend
 
 ```bash
-cd jarvis_new/frontend
+cd anfisa_new/frontend
 pnpm install
 ```
 
@@ -84,7 +84,7 @@ flutter pub get
 Copy the example environment file and fill in your credentials:
 
 ```bash
-cd jarvis_new
+cd anfisa_new
 cp .env.example .env.local
 ```
 
@@ -104,7 +104,7 @@ The React frontend also expects `LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET`, and `LI
 ### Agent (Python)
 
 ```bash
-cd jarvis_new
+cd anfisa_new
 
 # Development mode (connects to LiveKit dev server)
 uv run src/agent.py dev
@@ -117,7 +117,7 @@ uv run src/agent.py console
 ### Web Frontend
 
 ```bash
-cd jarvis_new/frontend
+cd anfisa_new/frontend
 npm run dev
 ```
 
@@ -132,7 +132,7 @@ flutter run
 
 ## Architecture
 
-Jarvis uses **LiveKit's realtime agent framework** with function tools:
+Anfisa uses **LiveKit's realtime agent framework** with function tools:
 
 1. **Voice Pipeline**: User speaks → LiveKit streams audio → AI Coustics denoises → Gemini Realtime processes
 2. **Tool Calling**: Gemini invokes browser tools via LiveKit's function tool system

@@ -123,7 +123,7 @@
   }
 }
 
-.jarvis-background {
+.anfisa-background {
   position: fixed;
   inset: 0;
   z-index: 0;
@@ -137,13 +137,13 @@
   pointer-events: none;
 }
 
-.jarvis-background__haze,
-.jarvis-background__grid {
+.anfisa-background__haze,
+.anfisa-background__grid {
   position: absolute;
   inset: -10%;
 }
 
-.jarvis-background__ambient {
+.anfisa-background__ambient {
   position: absolute;
   inset: -20%;
   background:
@@ -151,10 +151,10 @@
     radial-gradient(circle at 65% 55%, rgb(36 160 255 / 10%), transparent 18%);
   filter: blur(14px);
   will-change: transform;
-  animation: jarvis-ambient 22s ease-in-out infinite alternate;
+  animation: anfisa-ambient 22s ease-in-out infinite alternate;
 }
 
-.jarvis-background__haze {
+.anfisa-background__haze {
   background: radial-gradient(
     ellipse at center,
     transparent 8%,
@@ -164,7 +164,7 @@
   filter: blur(2px);
 }
 
-.jarvis-background__grid {
+.anfisa-background__grid {
   opacity: 0.09;
   background-image:
     linear-gradient(rgb(31 213 255 / 18%) 1px, transparent 1px),
@@ -174,13 +174,13 @@
   filter: blur(0.8px);
 }
 
-.jarvis-background__vignette {
+.anfisa-background__vignette {
   position: absolute;
   inset: 0;
   background: radial-gradient(ellipse at center, transparent 20%, rgb(0 1 5 / 72%) 100%);
 }
 
-.jarvis-background__hud {
+.anfisa-background__hud {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -192,152 +192,152 @@
   opacity: 0.88;
 }
 
-.jarvis-background__glow-layer {
+.anfisa-background__glow-layer {
   filter: blur(1.8px) drop-shadow(0 0 7px rgb(0 221 255 / 42%));
 }
 
-.jarvis-background__module,
-.jarvis-background__target,
-.jarvis-background__orbit,
-.jarvis-background__ticks {
+.anfisa-background__module,
+.anfisa-background__target,
+.anfisa-background__orbit,
+.anfisa-background__ticks {
   stroke: currentColor;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.jarvis-background__target {
+.anfisa-background__target {
   opacity: 0.4;
 }
 
-.jarvis-background__module {
+.anfisa-background__module {
   opacity: 0.52;
   transform-box: fill-box;
   transform-origin: center;
   filter: blur(0.7px);
   will-change: transform, opacity;
-  animation: jarvis-float 8s ease-in-out infinite alternate;
+  animation: anfisa-float 8s ease-in-out infinite alternate;
 }
 
-.jarvis-background__module--top,
-.jarvis-background__module--data {
+.anfisa-background__module--top,
+.anfisa-background__module--data {
   animation-delay: -4s;
 }
 
-.jarvis-background__module--chart,
-.jarvis-background__module--wave {
+.anfisa-background__module--chart,
+.anfisa-background__module--wave {
   animation-delay: -7s;
 }
 
-.jarvis-background__ring {
+.anfisa-background__ring {
   stroke-width: 1.4;
   opacity: 0.5;
 }
 
-.jarvis-background__ring--segments {
+.anfisa-background__ring--segments {
   stroke-width: 15;
   stroke-dasharray: 11 7;
   opacity: 0.82;
   transform-box: view-box;
   transform-origin: 720px 466px;
   will-change: transform;
-  animation: jarvis-rotate 14s linear infinite;
+  animation: anfisa-rotate 14s linear infinite;
 }
 
-.jarvis-background__ring--outer {
+.anfisa-background__ring--outer {
   stroke-dasharray: 220 34 12 18;
   transform-origin: 720px 466px;
   transform-box: view-box;
   will-change: transform;
-  animation: jarvis-rotate 24s linear infinite;
+  animation: anfisa-rotate 24s linear infinite;
 }
 
-.jarvis-background__ring--bright {
+.anfisa-background__ring--bright {
   stroke-width: 4;
   stroke-dasharray: 480 112;
   transform-origin: 720px 466px;
   transform-box: view-box;
   will-change: transform;
-  animation: jarvis-rotate-reverse 15s linear infinite;
+  animation: anfisa-rotate-reverse 15s linear infinite;
 }
 
-.jarvis-background__ring--inner {
+.anfisa-background__ring--inner {
   stroke-dasharray: 20 12;
   transform-origin: 720px 466px;
   transform-box: view-box;
   will-change: transform;
-  animation: jarvis-rotate 10s linear infinite;
+  animation: anfisa-rotate 10s linear infinite;
 }
 
-.jarvis-background__core-dot {
+.anfisa-background__core-dot {
   fill: currentColor;
   stroke: none;
 }
 
-.jarvis-background__crosshair {
+.anfisa-background__crosshair {
   opacity: 0.62;
   stroke-width: 2;
 }
 
-.jarvis-background__ticks {
+.anfisa-background__ticks {
   stroke-width: 1.5;
   opacity: 0.72;
   transform-origin: 720px 466px;
   transform-box: view-box;
   will-change: transform;
-  animation: jarvis-rotate-reverse 22s linear infinite;
+  animation: anfisa-rotate-reverse 22s linear infinite;
 }
 
-.jarvis-background__orbit {
+.anfisa-background__orbit {
   transform-origin: 1230px 170px;
   transform-box: view-box;
   will-change: transform;
-  animation: jarvis-rotate 18s linear infinite;
+  animation: anfisa-rotate 18s linear infinite;
 }
 
-.jarvis-background__arc {
+.anfisa-background__arc {
   stroke-width: 5;
   stroke-dasharray: 80 520;
-  animation: jarvis-arc-pulse 5.5s linear infinite;
+  animation: anfisa-arc-pulse 5.5s linear infinite;
 }
 
-.jarvis-background__circuit path,
-.jarvis-background__circuit circle,
-.jarvis-background__circuit ellipse {
+.anfisa-background__circuit path,
+.anfisa-background__circuit circle,
+.anfisa-background__circuit ellipse {
   stroke-dasharray: 260;
-  animation: jarvis-circuit-flow 7s linear infinite;
+  animation: anfisa-circuit-flow 7s linear infinite;
 }
 
-.jarvis-background__data-line {
+.anfisa-background__data-line {
   stroke-dasharray: 34 22;
-  animation: jarvis-data-flow 5s linear infinite;
+  animation: anfisa-data-flow 5s linear infinite;
 }
 
-.jarvis-background__data-pixel {
+.anfisa-background__data-pixel {
   fill: currentColor;
   stroke: none;
   transform-box: fill-box;
   transform-origin: center;
-  animation: jarvis-pixel 4s steps(2, end) infinite;
+  animation: anfisa-pixel 4s steps(2, end) infinite;
 }
 
-.jarvis-background__data-pixel:nth-of-type(3n) {
+.anfisa-background__data-pixel:nth-of-type(3n) {
   animation-delay: -0.7s;
 }
 
-.jarvis-background__chart-bars {
+.anfisa-background__chart-bars {
   stroke-dasharray: 118;
   stroke-dashoffset: 78;
-  animation: jarvis-chart 5.5s ease-in-out infinite alternate;
+  animation: anfisa-chart 5.5s ease-in-out infinite alternate;
 }
 
-.jarvis-background__waveform {
+.anfisa-background__waveform {
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
-  animation: jarvis-wave 6.5s ease-in-out infinite;
+  animation: anfisa-wave 6.5s ease-in-out infinite;
 }
 
-.jarvis-background__particle {
+.anfisa-background__particle {
   position: absolute;
   width: 4px;
   height: 4px;
@@ -346,66 +346,66 @@
   box-shadow: 0 0 14px #21ddff;
   opacity: 0.32;
   will-change: transform, opacity;
-  animation: jarvis-twinkle 5s ease-in-out infinite;
+  animation: anfisa-twinkle 5s ease-in-out infinite;
 }
 
-@keyframes jarvis-rotate {
+@keyframes anfisa-rotate {
   to {
     transform: rotate(360deg);
   }
 }
 
-@keyframes jarvis-rotate-reverse {
+@keyframes anfisa-rotate-reverse {
   to {
     transform: rotate(-360deg);
   }
 }
 
-@keyframes jarvis-pulse {
+@keyframes anfisa-pulse {
   50% {
     opacity: 0.24;
     stroke-width: 4;
   }
 }
 
-@keyframes jarvis-ambient {
+@keyframes anfisa-ambient {
   to {
     transform: translate3d(6%, -4%, 0) scale(1.15);
   }
 }
 
-@keyframes jarvis-data-flow {
+@keyframes anfisa-data-flow {
   to {
     stroke-dashoffset: -224;
   }
 }
 
-@keyframes jarvis-circuit-flow {
+@keyframes anfisa-circuit-flow {
   to {
     stroke-dashoffset: -520;
   }
 }
 
-@keyframes jarvis-arc-pulse {
+@keyframes anfisa-arc-pulse {
   to {
     stroke-dashoffset: -600;
   }
 }
 
-@keyframes jarvis-pixel {
+@keyframes anfisa-pixel {
   50% {
     opacity: 0.15;
     transform: scale(0.5);
   }
 }
 
-@keyframes jarvis-chart {
+@keyframes anfisa-chart {
   to {
     stroke-dashoffset: 0;
   }
 }
 
-@keyframes jarvis-wave {
+@keyframes anfisa-wave {
   45% {
     stroke-dashoffset: 0;
   }
@@ -414,14 +414,14 @@
   }
 }
 
-@keyframes jarvis-float {
+@keyframes anfisa-float {
   to {
     transform: translateY(-9px);
     opacity: 0.78;
   }
 }
 
-@keyframes jarvis-twinkle {
+@keyframes anfisa-twinkle {
   50% {
     opacity: 0.9;
     transform: scale(1.8);
@@ -429,14 +429,14 @@
 }
 
 @media (max-width: 700px) {
-  .jarvis-background__hud {
+  .anfisa-background__hud {
     min-width: 760px;
     opacity: 0.42;
   }
 
-  .jarvis-background__module--left,
-  .jarvis-background__module--data,
-  .jarvis-background__module--chart {
+  .anfisa-background__module--left,
+  .anfisa-background__module--data,
+  .anfisa-background__module--chart {
     opacity: 0.22;
   }
 }

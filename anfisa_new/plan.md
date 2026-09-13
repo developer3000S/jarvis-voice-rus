@@ -74,7 +74,7 @@ The following LiveKit function tools are registered in `src/agent.py`:
 
 ## Page Inspection And Interaction
 
-Before clicking or typing, Jarvis is instructed to call `inspect_page` unless the target was returned by an earlier inspection.
+Before clicking or typing, Anfisa is instructed to call `inspect_page` unless the target was returned by an earlier inspection.
 
 `inspect_page` exposes up to eighty visible interactive elements, including:
 
@@ -115,7 +115,7 @@ uv run pytest tests/test_browser.py
 ## Run Locally
 
 ```powershell
-cd "C:\Users\Thanh-y\Documents\Python_Project_S\jarvis_updated_test\jarvis_new"
+cd "C:\Users\Thanh-y\Documents\Python_Project_S\anfisa_updated_test\anfisa_new"
 uv run python src/agent.py dev
 ```
 

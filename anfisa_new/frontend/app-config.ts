@@ -46,7 +46,7 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
   accent: '#002cf2',
   logoDark: '/lk-logo-dark.svg',
   accentDark: '#1fd5f9',
-  startButtonText: 'Talk to Jarvis',
+  startButtonText: 'Talk to Anfisa',
 
   // optional: audio visualization configuration
   // audioVisualizerType: 'bar',

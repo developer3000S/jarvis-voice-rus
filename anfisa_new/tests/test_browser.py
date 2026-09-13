@@ -69,7 +69,7 @@ async def test_visible_browser_window_is_brought_to_front(
 
     assert page.was_brought_to_front
     assert len(focused_titles) == 1
-    assert focused_titles[0].startswith("Jarvis Browser ")
+    assert focused_titles[0].startswith("Anfisa Browser ")
     assert page.titles == [focused_titles[0], "Original title"]
 
 

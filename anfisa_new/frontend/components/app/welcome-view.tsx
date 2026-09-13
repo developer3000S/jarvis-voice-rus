@@ -34,7 +34,7 @@ export const WelcomeView = ({
         <WelcomeImage />
 
         <p className="text-foreground max-w-prose pt-1 leading-6 font-medium">
-          Talk to your Jarvis AI Assistant
+          Talk to your Anfisa AI Assistant
         </p>
 
         <Button

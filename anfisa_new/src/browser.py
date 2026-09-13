@@ -119,7 +119,7 @@ def _focus_window_with_title(title: str, *, timeout_seconds: float = 2.0) -> boo
 
 
 async def _bring_page_window_to_front(page: Page) -> None:
-    marker = f"Jarvis Browser {uuid.uuid4().hex}"
+    marker = f"Anfisa Browser {uuid.uuid4().hex}"
     original_title = ""
     title_changed = False
     try:

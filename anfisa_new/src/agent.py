@@ -30,7 +30,7 @@ class Assistant(Agent):
                 "says goodbye, or directly asks to end the call."
             ),
             end_instructions=(
-                "Give Jarvis's brief, polite British-English farewell, then end the call."
+                "Give Anfisa's brief, polite British-English farewell, then end the call."
             ),
         )
         super().__init__(
@@ -39,8 +39,8 @@ class Assistant(Agent):
             # llm=inference.LLM(model="google/gemma-4-31b-it"),
             llm=google.beta.realtime.RealtimeModel(
                 model="gemini-3.1-flash-live-preview",
-                voice="Enceladus",
-                language="en-GB",
+                voice="Svetlana",
+                language="ru-RU",
                 tool_response_scheduling=genai_types.FunctionResponseScheduling.WHEN_IDLE,
             ),
             # To use a realtime model instead of a voice pipeline, replace the LLM
